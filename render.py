@@ -24,9 +24,10 @@ def _font(names, size):
     return ImageFont.load_default()
 
 
-F_LABEL = _font(["segoeui.ttf", "arial.ttf"], 15)
+# Semibold for labels/header ("a little bold"), bold for the values.
+F_LABEL = _font(["seguisb.ttf", "segoeuib.ttf", "arialbd.ttf"], 15)
 F_VALUE = _font(["segoeuib.ttf", "arialbd.ttf"], 19)
-F_SMALL = _font(["segoeui.ttf", "arial.ttf"], 13)
+F_SMALL = _font(["seguisb.ttf", "segoeuib.ttf", "arialbd.ttf"], 13)
 
 ROWS = [
     # key, label, unit, (warn, crit)
@@ -36,6 +37,12 @@ ROWS = [
     ("gpu_load", "GPU usage", "%", (60, 85)),
     ("ram_pct", "RAM", "%", (70, 90)),
 ]
+# Rows that take the place of GPU rows on a PC without those sensors, in this order.
+FALLBACK_ROWS = [
+    ("net", "Network", "Mb/s", (10**9, 10**9)),  # never coloured by threshold
+    ("disk_pct", "SSD C:", "%", (80, 92)),
+]
+NET_MAX_MBPS = 100.0  # bar full scale for the network row
 
 
 def _colour(value, warn, crit):
@@ -66,15 +73,32 @@ def render(metrics, clock=True):
     rows = ROWS
     if metrics.get("lhm_ok"):
         # Sensors are being read fine, so a missing GPU value means the hardware has no such
-        # sensor (no GPU at all, or an integrated GPU without a temperature sensor): drop the row.
-        rows = [r for r in ROWS if not (r[0].startswith("gpu") and metrics.get(r[0]) is None)]
+        # sensor (no GPU at all, or an integrated GPU without a temperature sensor): replace
+        # the row with network speed / SSD usage instead.
+        fallbacks = list(FALLBACK_ROWS)
+        rows = []
+        for r in ROWS:
+            if r[0].startswith("gpu") and metrics.get(r[0]) is None:
+                if fallbacks:
+                    rows.append(fallbacks.pop(0))
+            else:
+                rows.append(r)
     row_h = (SIZE - top - 4) // len(rows)
     y = top + 2
     for key, label, unit, (warn, crit) in rows:
         v = metrics.get(key)
+        if key == "net":
+            down, up = metrics.get("net_down_mbps"), metrics.get("net_up_mbps")
+            v = None if down is None else max(down, up or 0) / NET_MAX_MBPS * 100  # bar only
         colour = _colour(v, warn, crit)
+        if key == "net" and v is not None:
+            colour = (90, 170, 235)
         d.text((8, y), label, font=F_LABEL, fill=FG)
-        if key == "ram_pct" and metrics.get("ram_used_gb") is not None:
+        if key == "net":
+            txt = f"↓{down:.1f} ↑{up:.1f}" if down is not None else "--"
+        elif key == "disk_pct" and metrics.get("disk_used_gb") is not None:
+            txt = f"{v:.0f}%  {metrics['disk_used_gb']:.0f}/{metrics['disk_total_gb']:.0f}G" if v is not None else "--"
+        elif key == "ram_pct" and metrics.get("ram_used_gb") is not None:
             txt = f"{v:.0f}%  {metrics['ram_used_gb']:.1f}/{metrics['ram_total_gb']:.0f}G" if v is not None else "--"
         elif key == "gpu_load" and metrics.get("gpu_vram_used_gb") is not None:
             txt = f"{v:.0f}% ({metrics['gpu_vram_used_gb']:.1f}GB)" if v is not None else "--"
@@ -109,7 +133,8 @@ if __name__ == "__main__":
     with open("preview.jpg", "wb") as f:
         f.write(data)
     print(f"wrote preview.jpg ({len(data)} bytes)")
-    sample.update(gpu_temp=None, gpu_load=None)
+    sample.update(gpu_temp=None, gpu_load=None, net_down_mbps=42.7, net_up_mbps=3.1,
+                  disk_pct=61, disk_used_gb=290, disk_total_gb=476)
     with open("preview_nogpu.jpg", "wb") as f:
         f.write(render_jpeg_bytes(sample))
     print("wrote preview_nogpu.jpg (layout for a PC without a GPU)")

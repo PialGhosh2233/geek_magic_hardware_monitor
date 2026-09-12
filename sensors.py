@@ -4,8 +4,10 @@ Run directly to print the metrics and every sensor LHM exposes (useful when a
 label doesn't match and a value shows as None).
 """
 import json
+import os
 import re
 import sys
+import time
 
 import psutil
 import requests
@@ -70,7 +72,40 @@ def _pick(rows, hw_pred, category, names):
     return None
 
 
-def read_metrics(lhm_url=DEFAULT_LHM_URL):
+_net_last = {"t": None, "rx": 0, "tx": 0}
+
+
+def net_speed_mbps():
+    """(download, upload) in Mbit/s since the previous call, all NICs except loopback. First call -> (0, 0)."""
+    rx = tx = 0
+    for name, c in psutil.net_io_counters(pernic=True).items():
+        if "loopback" in name.lower():
+            continue
+        rx += c.bytes_recv
+        tx += c.bytes_sent
+    now = time.time()
+    last = _net_last
+    if last["t"] is None or now - last["t"] <= 0:
+        down = up = 0.0
+    else:
+        dt = now - last["t"]
+        down = max(0.0, (rx - last["rx"]) * 8 / dt / 1e6)
+        up = max(0.0, (tx - last["tx"]) * 8 / dt / 1e6)
+    last.update(t=now, rx=rx, tx=tx)
+    return down, up
+
+
+def disk_usage(drive=None):
+    """(percent, used_gb, total_gb) for the system drive (or the given one, e.g. 'D:')."""
+    drive = drive or os.environ.get("SystemDrive", "C:")
+    try:
+        u = psutil.disk_usage(drive + "\\")
+    except Exception:
+        return None, None, None
+    return u.percent, u.used / 2**30, u.total / 2**30
+
+
+def read_metrics(lhm_url=DEFAULT_LHM_URL, disk_drive=None):
     """Return dict with cpu_temp, cpu_load, gpu_temp, gpu_load, ram_pct, ram_used_gb, ram_total_gb.
 
     Missing values are None. LHM errors don't raise; psutil values are always filled.
@@ -89,6 +124,8 @@ def read_metrics(lhm_url=DEFAULT_LHM_URL):
         "lhm_ok": False,
         "gpu_present": True,  # assume yes until LHM tells us otherwise
     }
+    metrics["net_down_mbps"], metrics["net_up_mbps"] = net_speed_mbps()
+    metrics["disk_pct"], metrics["disk_used_gb"], metrics["disk_total_gb"] = disk_usage(disk_drive)
     try:
         rows = fetch_lhm(lhm_url)
     except Exception:

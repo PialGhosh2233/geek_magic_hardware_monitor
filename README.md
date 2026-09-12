@@ -61,7 +61,7 @@ adapter avoids the question entirely.
 
 ### 4. Autostart
 `install_task.ps1` registered a scheduled task **GeekMagic Monitor** that starts
-`monitor.py` (hidden) 30 s after you log in. Remove with `uninstall_task.ps1`.
+`monitor.py` (hidden) 30 s after you log in.
 All three GeekMagic/LibreHardwareMonitor tasks are visible in Task Scheduler → Task Scheduler Library.
 
 ## Run on another PC
@@ -81,16 +81,28 @@ All three GeekMagic/LibreHardwareMonitor tasks are visible in Task Scheduler →
 Notes
 - The new PC must be on the same WiFi/LAN as the device.
 - Run the monitor on only one PC at a time; two PCs would overwrite each other's
-  picture. Stop it on the old PC with `uninstall_task.ps1` (or just disable the
+  picture. Stop it on the old PC with `uninstall.ps1 -KeepLibreHardwareMonitor` (or just disable the
   "GeekMagic Monitor" task) before starting it elsewhere.
 - No GPU, or an integrated GPU without a temperature sensor: the GPU rows whose
-  value doesn't exist are dropped automatically and the other rows spread out
-  (see `preview_nogpu.jpg` after `python render.py`). Rows are only dropped while
-  LibreHardwareMonitor is answering, so a brief sensor outage doesn't change the layout.
+  value doesn't exist are replaced by **Network** (download/upload in Mbit/s, bar
+  full at 100 Mbit/s, `NET_MAX_MBPS` in `render.py`) and **SSD C:** (system drive
+  used %, used/total GB). See `preview_nogpu.jpg` after `python render.py`. Rows are
+  only swapped while LibreHardwareMonitor is answering, so a brief sensor outage
+  doesn't change the layout.
 - Any CPU/GPU works: sensors are picked by LibreHardwareMonitor's ids
   (`/intelcpu/`, `/amdcpu/`, `/gpu-nvidia/`, `/gpu-amd/`, `/gpu-intel/`). If a value
   shows `--`, run `python sensors.py` and adjust the names in `sensors.py`.
 - `setup.ps1 -SkipElevated` skips the UAC step; then start LibreHardwareMonitor by hand.
+
+## Uninstall
+```
+powershell -ExecutionPolicy Bypass -File .\uninstall.ps1
+```
+Switches the device to its own weather clock and deletes the dashboard picture
+from it, stops the monitor, removes the three scheduled tasks, and deletes
+LibreHardwareMonitor from `C:\Tools` (one UAC prompt for its elevated task).
+Then delete this folder. Add `-KeepLibreHardwareMonitor` to keep that program.
+The device's WiFi, city, time zone and 12-hour settings are left as they are.
 
 ## Files
 | File | Purpose |
@@ -103,6 +115,7 @@ Notes
 | `session_hooks.py` | hidden window that receives Windows shutdown/sleep/resume notifications |
 | `set_clock.py` | switch the device to the clock theme (or any theme number) |
 | `setup.ps1` | one-shot install on a new PC (deps, LibreHardwareMonitor, tasks) |
+| `uninstall.ps1` | removes everything the setup added |
 | `monitor.py` | main loop; logs to `monitor.log` |
 | `run_monitor.vbs` | launches `monitor.py` without a console window |
 
