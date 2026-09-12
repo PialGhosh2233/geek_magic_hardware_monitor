@@ -63,9 +63,14 @@ def render(metrics, clock=True):
     if not metrics.get("lhm_ok", True):
         d.text((8, top), "sensors offline", font=F_SMALL, fill=(235, 70, 70))
 
-    row_h = (SIZE - top - 4) // len(ROWS)
+    rows = ROWS
+    if metrics.get("lhm_ok"):
+        # Sensors are being read fine, so a missing GPU value means the hardware has no such
+        # sensor (no GPU at all, or an integrated GPU without a temperature sensor): drop the row.
+        rows = [r for r in ROWS if not (r[0].startswith("gpu") and metrics.get(r[0]) is None)]
+    row_h = (SIZE - top - 4) // len(rows)
     y = top + 2
-    for key, label, unit, (warn, crit) in ROWS:
+    for key, label, unit, (warn, crit) in rows:
         v = metrics.get(key)
         colour = _colour(v, warn, crit)
         d.text((8, y), label, font=F_LABEL, fill=FG)
@@ -78,7 +83,7 @@ def render(metrics, clock=True):
         w = d.textlength(txt, font=F_VALUE)
         d.text((SIZE - 8 - w, y - 3), txt, font=F_VALUE, fill=colour)
         # bar
-        by = y + row_h - 12
+        by = y + min(28, row_h - 12)  # bar sits just under the text, whatever the row height
         d.rounded_rectangle((8, by, SIZE - 8, by + 7), radius=3, fill=TRACK)
         if v is not None:
             scale = 100.0 if unit == "%" else 100.0  # temps drawn on a 0-100 °C scale
@@ -104,3 +109,7 @@ if __name__ == "__main__":
     with open("preview.jpg", "wb") as f:
         f.write(data)
     print(f"wrote preview.jpg ({len(data)} bytes)")
+    sample.update(gpu_temp=None, gpu_load=None)
+    with open("preview_nogpu.jpg", "wb") as f:
+        f.write(render_jpeg_bytes(sample))
+    print("wrote preview_nogpu.jpg (layout for a PC without a GPU)")

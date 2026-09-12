@@ -87,12 +87,14 @@ def read_metrics(lhm_url=DEFAULT_LHM_URL):
         "ram_used_gb": vm.used / 2**30,
         "ram_total_gb": vm.total / 2**30,
         "lhm_ok": False,
+        "gpu_present": True,  # assume yes until LHM tells us otherwise
     }
     try:
         rows = fetch_lhm(lhm_url)
     except Exception:
         return metrics
     metrics["lhm_ok"] = True
+    metrics["gpu_present"] = any(_is_gpu(hw, kind) for hw, kind, *_ in rows)
     metrics["cpu_temp"] = _pick(rows, _is_cpu, "temperature", ["CPU Package", "Core Average", "Core Max", "CPU Core #1", "Core (Tctl/Tdie)"])
     metrics["gpu_temp"] = _pick(rows, _is_gpu, "temperature", ["GPU Core", "GPU Hot Spot", "GPU Temperature"])
     metrics["gpu_load"] = _pick(rows, _is_gpu, "load", ["GPU Core", "D3D 3D", "GPU Total", "GPU"])

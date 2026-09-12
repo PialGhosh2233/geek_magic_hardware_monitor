@@ -83,6 +83,10 @@ Notes
 - Run the monitor on only one PC at a time; two PCs would overwrite each other's
   picture. Stop it on the old PC with `uninstall_task.ps1` (or just disable the
   "GeekMagic Monitor" task) before starting it elsewhere.
+- No GPU, or an integrated GPU without a temperature sensor: the GPU rows whose
+  value doesn't exist are dropped automatically and the other rows spread out
+  (see `preview_nogpu.jpg` after `python render.py`). Rows are only dropped while
+  LibreHardwareMonitor is answering, so a brief sensor outage doesn't change the layout.
 - Any CPU/GPU works: sensors are picked by LibreHardwareMonitor's ids
   (`/intelcpu/`, `/amdcpu/`, `/gpu-nvidia/`, `/gpu-amd/`, `/gpu-intel/`). If a value
   shows `--`, run `python sensors.py` and adjust the names in `sensors.py`.
