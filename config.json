@@ -1,0 +1,10 @@
+{
+  "device_ip": "192.168.0.134",
+  "refresh_seconds": 5,
+  "lhm_url": "http://localhost:8085/data.json",
+  "jpeg_quality": 80,
+  "image_name": "monitor.jpg",
+  "device_mac": "c8-2b-96-22-b8-62",
+  "auto_discover": true,
+  "off_theme": 1
+}

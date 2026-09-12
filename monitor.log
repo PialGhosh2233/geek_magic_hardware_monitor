@@ -1,0 +1,356 @@
+2026-09-11 15:26:12,827 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-11 15:26:12,857 WARNING LibreHardwareMonitor reachable
+2026-09-11 15:26:16,080 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:26:19,537 INFO windows event: shutdown/logoff (query)
+2026-09-11 15:26:19,864 INFO device switched to clock theme 4
+2026-09-11 15:26:39,773 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-11 15:26:39,803 WARNING LibreHardwareMonitor reachable
+2026-09-11 15:26:41,640 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:26:55,557 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 5s)
+2026-09-11 15:27:00,715 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 10s)
+2026-09-11 15:27:10,749 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 15s)
+2026-09-11 15:27:10,749 INFO scanning the local network for the GeekMagic device...
+2026-09-11 15:27:13,412 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 15:27:16,764 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:27:37,114 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-11 15:27:37,150 WARNING LibreHardwareMonitor reachable
+2026-09-11 15:27:38,888 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:28:18,620 INFO windows event: sleep
+2026-09-11 15:28:18,837 INFO device switched to clock theme 4
+2026-09-11 15:28:39,357 INFO windows event: resume
+2026-09-11 15:28:39,366 INFO windows event: resume
+2026-09-11 15:28:41,888 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by NewConnectionError("HTTPConnection(host='192.168.0.134', port=80): Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host")) (retry in 5s)
+2026-09-11 15:28:45,613 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by NewConnectionError("HTTPConnection(host='192.168.0.134', port=80): Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host")) (retry in 10s)
+2026-09-11 15:28:58,138 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:32:04,944 ERROR ReadTimeout: HTTPConnectionPool(host='192.168.0.134', port=80): Read timed out. (read timeout=10.0) (retry in 5s)
+2026-09-11 15:32:08,511 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:35:10,949 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-11 15:35:13,810 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:40:19,136 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:45:24,120 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:50:31,665 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:53:03,321 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-11 15:53:05,981 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 15:58:11,031 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:03:16,163 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:08:21,150 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:13:26,551 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:18:31,859 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:23:38,154 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:28:42,273 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:33:48,933 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:38:55,111 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:43:59,128 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:49:01,662 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:53:07,716 INFO windows event: shutdown/logoff (query)
+2026-09-11 16:53:08,009 INFO device switched to clock theme 4
+2026-09-11 16:54:42,466 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-11 16:54:46,500 WARNING LibreHardwareMonitor NOT reachable - temps/GPU will show '--'
+2026-09-11 16:54:48,194 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:54:48,997 WARNING LibreHardwareMonitor reachable
+2026-09-11 16:55:34,962 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 63) (retry in 5s)
+2026-09-11 16:55:39,880 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 63) (retry in 10s)
+2026-09-11 16:55:49,839 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 26) (retry in 15s)
+2026-09-11 16:55:49,839 INFO scanning the local network for the GeekMagic device...
+2026-09-11 16:55:52,504 WARNING no GeekMagic device found on the network
+2026-09-11 16:56:04,729 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 26) (retry in 20s)
+2026-09-11 16:56:24,807 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 26) (retry in 25s)
+2026-09-11 16:56:50,751 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 26) (retry in 30s)
+2026-09-11 16:56:50,751 INFO scanning the local network for the GeekMagic device...
+2026-09-11 16:56:53,394 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 16:56:56,175 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:57:15,180 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 50) (retry in 5s)
+2026-09-11 16:57:20,298 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 50) (retry in 10s)
+2026-09-11 16:57:31,458 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:57:55,009 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 5s)
+2026-09-11 16:57:59,891 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 10s)
+2026-09-11 16:58:10,950 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 16:58:30,139 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 5s)
+2026-09-11 16:58:34,909 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 10s)
+2026-09-11 16:58:44,982 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 15s)
+2026-09-11 16:58:44,982 INFO scanning the local network for the GeekMagic device...
+2026-09-11 16:58:47,620 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 16:58:50,064 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 5s)
+2026-09-11 16:58:55,135 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 10s)
+2026-09-11 16:59:04,937 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 15s)
+2026-09-11 16:59:20,004 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 20s)
+2026-09-11 16:59:40,445 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 0) (retry in 25s)
+2026-09-11 17:00:05,363 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 53) (retry in 30s)
+2026-09-11 17:00:05,363 INFO scanning the local network for the GeekMagic device...
+2026-09-11 17:00:09,067 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 17:00:12,839 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:00:30,587 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 5s)
+2026-09-11 17:00:35,686 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 10s)
+2026-09-11 17:00:45,684 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 15s)
+2026-09-11 17:01:01,422 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:02:25,444 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-11 17:02:30,456 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 10s)
+2026-09-11 17:02:40,517 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 15s)
+2026-09-11 17:02:40,517 INFO scanning the local network for the GeekMagic device...
+2026-09-11 17:02:43,157 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 17:02:46,740 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:04:19,398 INFO windows event: sleep
+2026-09-11 17:04:33,412 ERROR session hook sleep failed: HTTPConnectionPool(host='192.168.0.134', port=80): Read timed out. (read timeout=3.0)
+2026-09-11 17:04:34,518 INFO windows event: resume
+2026-09-11 17:04:34,519 INFO windows event: resume
+2026-09-11 17:04:41,050 ERROR ConnectTimeout: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.0.134', port=80) at 0x26b5d7a21b0>, 'Connection to 192.168.0.134 timed out. (connect timeout=10.0)')) (retry in 5s)
+2026-09-11 17:04:41,587 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by NewConnectionError("HTTPConnection(host='192.168.0.134', port=80): Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host")) (retry in 10s)
+2026-09-11 17:04:53,556 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:05:42,315 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-11 17:05:45,632 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:07:43,983 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 4286) (retry in 5s)
+2026-09-11 17:07:49,019 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 4286) (retry in 10s)
+2026-09-11 17:07:58,857 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 4286) (retry in 15s)
+2026-09-11 17:07:58,858 INFO scanning the local network for the GeekMagic device...
+2026-09-11 17:08:01,520 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 17:08:09,860 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1608 bytes read, 1972 more expected)', IncompleteRead(1608 bytes read, 1972 more expected)) (retry in 5s)
+2026-09-11 17:08:12,621 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:08:44,010 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1608 bytes read, 1972 more expected)', IncompleteRead(1608 bytes read, 1972 more expected)) (retry in 5s)
+2026-09-11 17:08:52,690 ERROR ConnectTimeout: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /v.json (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.0.134', port=80) at 0x26b5caa88f0>, 'Connection to 192.168.0.134 timed out. (connect timeout=3.0)')) (retry in 10s)
+2026-09-11 17:09:00,437 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:09:25,510 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-11 17:09:30,698 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:09:48,560 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-11 17:09:53,351 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 10s)
+2026-09-11 17:10:04,644 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 15s)
+2026-09-11 17:10:04,646 INFO scanning the local network for the GeekMagic device...
+2026-09-11 17:10:07,292 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 17:10:11,860 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:10:28,933 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-11 17:10:37,297 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by NewConnectionError("HTTPConnection(host='192.168.0.134', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")) (retry in 10s)
+2026-09-11 17:10:45,339 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 0) (retry in 15s)
+2026-09-11 17:11:01,066 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:11:18,849 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-11 17:11:23,739 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 10s)
+2026-09-11 17:11:33,841 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 15s)
+2026-09-11 17:11:33,841 INFO scanning the local network for the GeekMagic device...
+2026-09-11 17:11:36,468 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 17:11:40,462 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:11:50,950 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-11 17:11:54,004 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 10s)
+2026-09-11 17:12:03,995 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 15s)
+2026-09-11 17:12:18,969 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 20s)
+2026-09-11 17:12:38,907 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 25s)
+2026-09-11 17:12:38,908 INFO scanning the local network for the GeekMagic device...
+2026-09-11 17:12:41,547 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-11 17:12:44,907 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 17:13:21,794 INFO windows event: shutdown/logoff (query)
+2026-09-11 17:13:21,983 INFO device switched to clock theme 4
+2026-09-11 18:56:12,672 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-11 18:56:16,841 WARNING LibreHardwareMonitor reachable
+2026-09-11 18:56:19,198 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:01:22,384 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:06:28,327 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:11:32,503 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:16:37,397 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:17:15,201 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(2110 bytes read, 1470 more expected)', IncompleteRead(2110 bytes read, 1470 more expected)) (retry in 5s)
+2026-09-11 19:17:17,900 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:22:23,134 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:27:28,053 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:32:33,071 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:37:38,464 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:39:37,067 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1038 bytes read, 2542 more expected)', IncompleteRead(1038 bytes read, 2542 more expected)) (retry in 5s)
+2026-09-11 19:39:39,833 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:44:44,876 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:49:50,987 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 19:54:54,658 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:00:00,163 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:05:05,252 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:10:10,575 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:15:16,388 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:20:20,755 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:25:26,230 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:29:34,819 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1038 bytes read, 2542 more expected)', IncompleteRead(1038 bytes read, 2542 more expected)) (retry in 5s)
+2026-09-11 20:29:37,493 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:30:13,442 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-11 20:30:16,186 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:32:04,236 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1176 bytes read, 2404 more expected)', IncompleteRead(1176 bytes read, 2404 more expected)) (retry in 5s)
+2026-09-11 20:32:08,381 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:34:56,407 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(3320 bytes read, 260 more expected)', IncompleteRead(3320 bytes read, 260 more expected)) (retry in 5s)
+2026-09-11 20:35:02,396 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1072 bytes read, 2508 more expected)', IncompleteRead(1072 bytes read, 2508 more expected)) (retry in 10s)
+2026-09-11 20:35:12,304 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:40:15,282 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:45:20,217 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:50:25,252 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 20:55:30,653 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:00:35,790 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:05:40,593 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:08:03,779 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1712 bytes read, 1868 more expected)', IncompleteRead(1712 bytes read, 1868 more expected)) (retry in 5s)
+2026-09-11 21:08:06,464 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:13:11,584 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:18:16,631 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:23:23,183 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:28:26,840 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:33:31,575 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:38:36,867 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:43:41,728 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:48:46,992 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:53:51,918 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 21:58:57,161 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:04:01,958 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:09:07,262 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:14:13,693 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:19:17,121 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:24:22,146 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:29:30,738 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-11 22:29:33,415 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:34:38,284 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:39:43,582 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:44:48,407 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:49:53,627 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 22:54:58,642 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:00:03,913 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:05:09,892 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:10:13,778 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:15:18,686 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:20:23,944 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:25:28,903 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:30:39,100 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:34:42,307 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-11 23:34:45,073 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:39:50,027 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:41:12,224 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1038 bytes read, 2542 more expected)', IncompleteRead(1038 bytes read, 2542 more expected)) (retry in 5s)
+2026-09-11 23:41:15,059 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:46:19,991 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:51:25,185 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-11 23:56:31,302 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:01:35,187 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:06:39,952 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:11:45,195 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:16:50,184 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:21:55,542 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:27:01,032 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:32:05,686 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:37:10,640 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:39:54,009 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-12 00:39:56,619 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:45:03,468 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:50:09,319 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:55:12,248 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 00:55:25,839 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1176 bytes read, 2404 more expected)', IncompleteRead(1176 bytes read, 2404 more expected)) (retry in 5s)
+2026-09-12 00:55:28,501 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:00:34,279 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:04:09,257 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Read timed out. (retry in 5s)
+2026-09-12 01:04:11,868 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:09:17,125 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:09:44,349 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(2646 bytes read, 934 more expected)', IncompleteRead(2646 bytes read, 934 more expected)) (retry in 5s)
+2026-09-12 01:09:46,939 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:14:52,284 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:20:02,162 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:25:08,377 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:30:11,998 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:32:02,452 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(2542 bytes read, 1038 more expected)', IncompleteRead(2542 bytes read, 1038 more expected)) (retry in 5s)
+2026-09-12 01:32:06,178 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:37:10,096 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:42:15,215 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:47:20,357 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:52:22,508 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 01:57:27,836 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:02:37,667 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:07:42,855 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:07:56,592 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1176 bytes read, 2404 more expected)', IncompleteRead(1176 bytes read, 2404 more expected)) (retry in 5s)
+2026-09-12 02:07:59,421 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:08:37,487 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1038 bytes read, 2542 more expected)', IncompleteRead(1038 bytes read, 2542 more expected)) (retry in 5s)
+2026-09-12 02:08:41,082 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:13:45,195 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:16:25,028 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(2006 bytes read, 1574 more expected)', IncompleteRead(2006 bytes read, 1574 more expected)) (retry in 5s)
+2026-09-12 02:16:27,469 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:19:54,496 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1038 bytes read, 2542 more expected)', IncompleteRead(1038 bytes read, 2542 more expected)) (retry in 5s)
+2026-09-12 02:19:56,938 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:25:02,105 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:30:07,105 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:35:12,268 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:40:17,209 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:45:22,482 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:50:27,665 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:55:33,674 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 02:58:06,429 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-12 02:58:08,781 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:03:13,929 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:04:52,021 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(3320 bytes read, 260 more expected)', IncompleteRead(3320 bytes read, 260 more expected)) (retry in 5s)
+2026-09-12 03:04:56,135 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:09:59,651 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:15:05,074 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:16:12,960 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(1038 bytes read, 2542 more expected)', IncompleteRead(1038 bytes read, 2542 more expected)) (retry in 5s)
+2026-09-12 03:16:15,407 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:21:20,693 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:26:25,521 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:31:30,884 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:36:41,822 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:41:50,743 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:47:00,884 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:50:58,713 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(2110 bytes read, 1470 more expected)', IncompleteRead(2110 bytes read, 1470 more expected)) (retry in 5s)
+2026-09-12 03:51:01,206 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 03:56:06,317 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:01:11,769 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:06:16,947 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:08:29,376 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(2784 bytes read, 796 more expected)', IncompleteRead(2784 bytes read, 796 more expected)) (retry in 5s)
+2026-09-12 04:08:31,852 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:13:37,330 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:18:41,929 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:23:47,208 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:28:53,454 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:33:57,051 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:38:25,606 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-12 04:38:28,285 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:43:38,034 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:48:43,264 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:53:48,891 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 04:58:58,403 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:04:03,718 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:09:08,480 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:14:13,750 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:19:20,075 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:24:23,612 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:29:33,410 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:34:38,663 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:39:43,626 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:43:37,108 ERROR ChunkedEncodingError: ('Connection broken: IncompleteRead(934 bytes read, 2646 more expected)', IncompleteRead(934 bytes read, 2646 more expected)) (retry in 5s)
+2026-09-12 05:43:39,489 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:48:44,712 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:53:49,651 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 05:58:54,862 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 06:03:59,952 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 06:09:06,469 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 06:14:09,845 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 06:19:14,816 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 06:22:24,791 INFO windows event: shutdown/logoff (query)
+2026-09-12 06:22:25,058 INFO device switched to clock theme 4
+2026-09-12 17:07:44,194 WARNING saved device_ip 192.168.0.134 not answering (HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /v.json (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.0.134', port=80) at 0x1aa050df3b0>, 'Connection to 192.168.0.134 timed out. (connect timeout=3.0)')))
+2026-09-12 17:07:44,211 INFO scanning the local network for the GeekMagic device...
+2026-09-12 17:07:47,466 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-12 17:07:47,467 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-12 17:07:51,490 WARNING LibreHardwareMonitor NOT reachable - temps/GPU will show '--'
+2026-09-12 17:07:53,544 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 17:07:54,340 WARNING LibreHardwareMonitor reachable
+2026-09-12 17:12:56,312 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 17:17:05,630 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 52) (retry in 5s)
+2026-09-12 17:17:10,402 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 10s)
+2026-09-12 17:17:20,650 ERROR InvalidHeader: Content-Length contained multiple unmatching values (3580, 11) (retry in 15s)
+2026-09-12 17:17:20,651 INFO scanning the local network for the GeekMagic device...
+2026-09-12 17:17:23,324 INFO found SmallTV-Ultra Ultra-V9.0.54 at 192.168.0.134 (mac c8-2b-96-22-b8-62)
+2026-09-12 17:17:25,612 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-12 17:17:25,646 WARNING LibreHardwareMonitor reachable
+2026-09-12 17:17:27,790 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 17:18:41,550 INFO windows event: sleep
+2026-09-12 17:19:15,442 ERROR session hook sleep failed: HTTPConnectionPool(host='192.168.0.134', port=80): Read timed out. (read timeout=3.0)
+2026-09-12 17:19:16,609 INFO windows event: resume
+2026-09-12 17:19:16,609 INFO windows event: resume
+2026-09-12 17:19:22,469 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Read timed out. (retry in 5s)
+2026-09-12 17:19:23,003 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by NewConnectionError("HTTPConnection(host='192.168.0.134', port=80): Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host")) (retry in 10s)
+2026-09-12 17:19:33,022 ERROR ConnectionError: HTTPConnectionPool(host='192.168.0.134', port=80): Max retries exceeded with url: /doUpload?dir=/image/ (Caused by NewConnectionError("HTTPConnection(host='192.168.0.134', port=80): Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host")) (retry in 15s)
+2026-09-12 17:19:33,022 INFO scanning the local network for the GeekMagic device...
+2026-09-12 17:19:34,279 WARNING no GeekMagic device found on the network
+2026-09-12 17:19:49,915 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 17:24:55,190 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 17:30:00,237 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 17:33:02,611 INFO windows event: shutdown/logoff (query)
+2026-09-12 17:33:04,106 INFO device switched to clock theme 1
+2026-09-12 18:06:46,377 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-12 18:06:50,413 WARNING LibreHardwareMonitor NOT reachable - temps/GPU will show '--'
+2026-09-12 18:06:52,689 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 18:06:55,572 WARNING LibreHardwareMonitor reachable
+2026-09-12 18:11:55,577 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
+2026-09-12 18:12:38,393 INFO starting: device=192.168.0.134 interval=5.0s lhm=http://localhost:8085/data.json
+2026-09-12 18:12:38,405 WARNING LibreHardwareMonitor reachable
+2026-09-12 18:12:40,257 INFO device online ({'m': 'SmallTV-Ultra', 'v': 'Ultra-V9.0.54'}), image selected
